@@ -1,0 +1,38 @@
+import turtle
+s = turtle.getscreen()
+t = turtle.Turtle()
+
+rad1 = 25
+posY = 0
+
+t.speed(0)
+def topCircle():
+  t.penup()
+  t.goto(0, posY + 25)
+  t.circle(rad1, 60)
+  t.pendown()
+  t.circle(rad1, 240)
+  t.penup()
+  t.circle(rad1, 60)
+
+def middleCircle():
+  t.penup()
+  t.goto(0, posY)
+  t.pendown()
+  t.circle(rad1)
+
+def bottomCircle():
+  t.penup()
+  t.goto(0, posY - 25)
+  t.pendown()
+  t.circle(rad1, 120)
+  t.penup()
+  t.circle(rad1, 120)
+  t.pendown()
+  t.circle(rad1, 120)
+
+def leftCircle():
+  t.penup()
+topCircle();
+middleCircle();
+bottomCircle();
