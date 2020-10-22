@@ -1,5 +1,22 @@
 Frank's code:
 
+import turtle as trtl
+t = trtl.Turtle()
+t.speed(0)
+rad = 25
+t.color("orange")
+def circle():
+  t.penup()
+  t.right(90)
+  t.forward(2 * rad - 2)
+  t.left(90) 
+  t.begin_fill()
+  t.circle(rad)
+  t.end_fill()
+
+for i in range (5):
+  circle();
+  rad -=5
 
 Anjana's code:
 
